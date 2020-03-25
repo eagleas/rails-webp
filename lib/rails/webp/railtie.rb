@@ -7,7 +7,7 @@ module Rails
 
       initializer :webp, group: :all do |app|
         app.config.assets.configure do |env|
-          env.register_mime_type 'image/jpeg', '.jpeg'
+          env.register_mime_type 'image/jpeg', '.jpg'
           env.register_postprocessor 'image/jpeg', PostProcessor
 
           env.register_mime_type 'image/png', '.png'
